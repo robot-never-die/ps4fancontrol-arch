@@ -1,0 +1,7 @@
+[Unit]
+Description=A program for adjust PS4 Linux threshold temperature.
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ps4fancontrol --threshold 60
+[Install]
+WantedBy=multi-user.target
